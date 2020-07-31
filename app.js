@@ -229,26 +229,6 @@ function play() {
     input.forEach(num => {
         let number = Number(num.slice(num.length - 1));
         let dir = num.slice(0, num.length - 1);
-        move1(number, dir);
-    });
-    console.log("QueenW's current postion ->" + board[queenW.position1.x][queenW.position1.y]);
-}
-
-//Try out using single input for both queen from here
-
-
-
-//try out ended
-
-
-
-/* Note:{open this if remove the try out}
-function play() {
-    var value = document.getElementById("position").value;
-    var input = value.split(" ");
-    input.forEach(num => {
-        let number = Number(num.slice(num.length - 1));
-        let dir = num.slice(0, num.length - 1);
         move(number, dir);
     });
     console.log("QueenB's current postion ->" + board[queenB.position.x][queenB.position.y]);
@@ -366,4 +346,4 @@ function play1() {
         move1(number, dir);
     });
     console.log("QueenW's current postion ->" + board[queenW.position1.x][queenW.position1.y]);
-}  */
+}
